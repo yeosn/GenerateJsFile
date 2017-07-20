@@ -1,0 +1,13 @@
+H:\VSProjects\TimeLineDataEditor\TimeLineDataEditor\bin\Debug\TimeLineDataEditor.dll
+H:\VSProjects\TimeLineDataEditor\TimeLineDataEditor\bin\Debug\TimeLineDataEditor.pdb
+H:\VSProjects\TimeLineDataEditor\TimeLineDataEditor\obj\Debug\TimeLineDataEditor.dll
+H:\VSProjects\TimeLineDataEditor\TimeLineDataEditor\obj\Debug\TimeLineDataEditor.pdb
+H:\GitHub\TimeLineDataEditor\TimeLineDataEditor\TimeLineDataEditor\bin\Debug\TimeLineDataEditor.dll
+H:\GitHub\TimeLineDataEditor\TimeLineDataEditor\TimeLineDataEditor\bin\Debug\TimeLineDataEditor.pdb
+H:\GitHub\TimeLineDataEditor\TimeLineDataEditor\TimeLineDataEditor\obj\Debug\TimeLineDataEditor.dll
+H:\GitHub\TimeLineDataEditor\TimeLineDataEditor\TimeLineDataEditor\obj\Debug\TimeLineDataEditor.pdb
+H:\VSProjects\GenerateJsFile\TimeLineDataEditor\bin\Debug\TimeLineDataEditor.dll
+H:\VSProjects\GenerateJsFile\TimeLineDataEditor\bin\Debug\TimeLineDataEditor.pdb
+H:\VSProjects\GenerateJsFile\TimeLineDataEditor\obj\Debug\TimeLineDataEditor.csprojResolveAssemblyReference.cache
+H:\VSProjects\GenerateJsFile\TimeLineDataEditor\obj\Debug\TimeLineDataEditor.dll
+H:\VSProjects\GenerateJsFile\TimeLineDataEditor\obj\Debug\TimeLineDataEditor.pdb
