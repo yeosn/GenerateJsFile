@@ -15,6 +15,15 @@ namespace GenerateJsFile
 {
     public partial class Form1 : Form
     {
+        //原TimeLine Js文件路径
+        private string _source_Timeline_Js_Path = @"H:\GitHub\TimeLineDataEditor\TimeLineDataEditor\data.js";
+        //编辑后重新保存的TimeLine Js文件路径
+        private string _target_Timeline_Js_Path = @"H:\data.JS";
+
+        //脑图对应的xml文件的路径
+        private string _mind_Xml_Path = @"H:\aa.xml";
+        //xml转换成Js文件之后的保存路径
+        private string _mind_Js_Path = @"H:\aa.js";
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +37,7 @@ namespace GenerateJsFile
             //转换成km
             //把 H:\aa.xml 转换成 H:\aa.js
             JosnConverter jConverter = new JosnConverter();
-            jConverter.XmlToJson(@"H:\aa.xml", @"H:\aa.js");
+            jConverter.XmlToJson(_mind_Xml_Path, _mind_Js_Path);
         }
 
         private string CreateXmlText()
@@ -78,7 +87,7 @@ namespace GenerateJsFile
             root.AddChild(D);
 
             //string xmlText = tgvXml.GenerateXml();
-            tgvXml.Save(@"H:\aa.xml");
+            tgvXml.Save(_mind_Xml_Path);
 
             return null;
         }
@@ -87,7 +96,7 @@ namespace GenerateJsFile
         {
             TimeLineDataJsCode timeLineDataJsCode = new TimeLineDataJsCode();
             //读取已有的js文件
-            timeLineDataJsCode.ReadFromJsFile(@"H:\GitHub\TimeLineDataEditor\TimeLineDataEditor\data.js");
+            timeLineDataJsCode.ReadFromJsFile(_source_Timeline_Js_Path);
 
             //在js代码中查找intro中含有“草长莺飞”字符串的data.push语句，并逐条删除
             List<TimeLineData> dataList = timeLineDataJsCode.Find("草长莺飞");
@@ -99,12 +108,14 @@ namespace GenerateJsFile
             //创建一个新的data.push语句
             TimeLineData tlData = new TimeLineData();
             tlData.AddOrUpdate("date", "2017-07=20");
-            tlData.AddOrUpdate("intro", "创建一个新的date.push");
-            tlData.AddOrUpdate("NewNode", "原本不存在的键");
+            tlData.AddOrUpdate("intro", "创建一个新的date.push"); 
+            tlData.AddOrUpdate("media", "<img src=\"images / psb.jpeg\" width=\"370\" >");
+            tlData.AddOrUpdate("like", "0");
+            tlData.AddOrUpdate("comment", "0");
             timeLineDataJsCode.Add(tlData);
 
             //保存成新的js文件
-            timeLineDataJsCode.WriteToJsFile(@"H:\data.JS");
+            timeLineDataJsCode.WriteToJsFile(_target_Timeline_Js_Path);
         }
     }
 }
